@@ -46,7 +46,7 @@ class Main extends Component {
                     <nav className="navbar navbar-light bg-dark text-center">
                         <h5 className="font-weight-normal text-white ml-auto mx-auto">Covid-19 Situation Report</h5>
                     </nav>
-                    <div className="col-sm-12 text-center mt-3">
+                    <div className="col-sm-12 text-center mt-4">
                         <BootstrapSwitchButton
                             checked={false}
                             onlabel='Global'
