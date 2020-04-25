@@ -17,7 +17,7 @@ class Local extends Component {
                     key === 'data' ?
                         <div key={key}>
                             <div className="row">
-                                <div className="col-sm-12 col-lg-6 mt-5 text-center">
+                                <div className="col-sm-12 col-lg-6 mt-4 text-center">
                                     <div>
                                         <h1 className="text-warning" style={{fontSize: 55}}><NumberFormat
                                             value={covid.data.local_total_cases} displayType={'text'}
