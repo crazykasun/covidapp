@@ -46,7 +46,7 @@ class Main extends Component {
                     <nav className="navbar navbar-light bg-dark text-center">
                         <h5 className="font-weight-normal text-white ml-auto mx-auto">Covid-19 Situation Report</h5>
                     </nav>
-                    <div className="col-sm-12 text-center mt-4">
+                    <div className="col-sm-12 text-center mt-3">
                         <BootstrapSwitchButton
                             checked={false}
                             onlabel='Global'
@@ -59,12 +59,12 @@ class Main extends Component {
                                 this.setState({method: !this.state.method})
                             }}/>
                     </div>
-                    <div className="col-lg-12 col-sm-12">
+                    <div className="col-lg-12 col-sm-12 mb-4">
                         {!this.state.method ? <Local covid={this.state.covid}/> : <Global covid={this.state.covid}/>}
                     </div>
 
-                    <footer className="fixed-bottom">
-                        <div className="footer-copyright text-center py-3 bg-dark text-white">© 2020 Copyright:
+                    <footer className="fixed-bottom mt-5">
+                        <div className="footer-copyright text-center py-3 mt-5 bg-dark text-white">© 2020 Copyright:
                             <a href="https://mdbootstrap.com/"> CraZy_KaZun</a>
                         </div>
                     </footer>
