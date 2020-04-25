@@ -46,7 +46,7 @@ class Main extends Component {
                     <nav className="navbar navbar-light bg-dark text-center">
                         <h5 className="font-weight-normal text-white ml-auto mx-auto">Covid-19 Situation Report</h5>
                     </nav>
-                    <div className="col-sm-12 text-center mt-5">
+                    <div className="col-sm-12 text-center mt-4">
                         <BootstrapSwitchButton
                             checked={false}
                             onlabel='Global'
@@ -59,7 +59,7 @@ class Main extends Component {
                                 this.setState({method: !this.state.method})
                             }}/>
                     </div>
-                    <div className="col-lg-12 col-sm-12 mt-1">
+                    <div className="col-lg-12 col-sm-12">
                         {!this.state.method ? <Local covid={this.state.covid}/> : <Global covid={this.state.covid}/>}
                     </div>
 
